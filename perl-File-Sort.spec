@@ -2,14 +2,14 @@
 %define upstream_version 1.01
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Sort a file or merge sort multiple files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/File-Sort
+Source0:	https://cpan.metacpan.org/authors/id/C/CN/CNANDOR/File-Sort-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
