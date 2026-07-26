@@ -1,15 +1,13 @@
 %define upstream_name    File-Sort
-%define upstream_version 1.01
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	1.01
+Release:	6
 
 Summary:	Sort a file or merge sort multiple files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/File-Sort
-Source0:	https://cpan.metacpan.org/authors/id/C/CN/CNANDOR/File-Sort-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CN/CNANDOR/File-Sort-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ Options
       OPTION => VALUE
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
